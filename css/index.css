@@ -1,0 +1,471 @@
+/* 项目左侧布局 */
+.container-left{
+  width: 30%;
+  height: auto;
+  position: fixed;
+  /* background-color: rgba(196, 100, 100, 0.836); */
+  float: left;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  /* display: none; */
+}
+.menu{
+  height: 50px;
+  width: 100%;
+  padding: 20px 10px;
+  margin-left: -6px;
+  margin-top: 4px;
+}
+.menu-left img{
+  width: 36px;
+  height: 36px;
+  float: left;
+  margin-left: 20px;
+}
+.nav{
+  margin-left: 22px;
+  margin-top: 8px;
+  float: left;
+  height: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  font-size: 17px;
+}
+.nav a {
+  color: black;
+}
+.menu-right{
+  float: right;
+  margin-top: 6px;
+  margin-right: 8px;
+  align-items: center;
+}
+.menu-right img:hover {cursor: pointer;}
+.menu-text{
+  width: 320px;
+  margin: 298px 80px;
+}
+.menu-text-top{
+  font-size: 27px;
+  font-weight: 700;
+}
+.menu-text-bottom{
+  width: 300px;
+  height: 100px;
+  margin-top: 20px;
+}
+.menu-text-bottom img{
+  width: 28px;
+  height: 28px;
+  float: left;
+  margin-top: 6px;
+  margin-left: 4px;
+}
+.login1{
+  color: #00a360;
+  float: left;
+  font-size: 16px;
+  line-height: 22px;
+  margin-left: 2px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.reges1{
+  float: left;
+  color: #00a360;
+  line-height: 15px;
+  font-size: 18px;
+  padding: 4px 10px;
+  border: 1px solid #00a360;
+  border-radius: 48px;
+  margin-top: 6px;
+  margin-left: 26px;
+  padding: 5px 13px;
+  cursor: pointer;
+}
+.login{
+  color: #00a360;
+  float: left;
+  font-size: 16px;
+  line-height: 22px;
+  margin-left: 2px;
+  margin-top: 4px;
+  cursor: pointer;
+}
+.reges{
+  float: left;
+  color: #00a360;
+  line-height: 15px;
+  font-size: 18px;
+  padding: 4px 10px;
+  border: 1px solid #00a360;
+  border-radius: 48px;
+  margin-top: 2x;
+  margin-left: 26px;
+  padding: 5px 13px;
+  cursor: pointer;
+}
+/* 第一部分 导航栏左侧 */
+.container-left-subnav{
+  width: 30%;
+  float: left;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden; 
+  /* 过渡动画的时间与效果 */
+  transition: 0.1s ease-in;
+}
+.subnav-right{
+  float: right;
+  margin-top: 8px;
+  margin-right: 11px;
+}
+.subnav-right img:hover {cursor: pointer;}
+.subnav-content{
+  padding: 42px 82px 20px;
+}
+.subnav-content-ul li{
+  font-size: 18px;
+  margin-bottom: 13px;
+  font-weight: bold;
+}
+.subnav-content-ul a{
+  color: black;
+}
+.subnav-content-ul hr{
+  width: 354px;
+  border: none;
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 20px 0px;
+  font-weight: normal;
+}
+.subnav-content img{
+  width: 28px;
+  height: 28px;
+  float: left;
+}
+.subnav-bottom-text{
+  display: inline;
+  font-size: 16px;
+  float: left;
+  color: grey;
+  margin: 30px 90px 0 0;
+}
+
+/* 项目右侧布局 */
+.container-right{
+  width: 70%;
+  height: 1900px;
+  float: right;
+  /* 隐藏水平滚动条 */
+  overflow-x: hidden;
+}
+/* 第一部分 轮播图 */
+.banner{
+  height: 504px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.banner-ul{
+    width: 6000px;
+    height: 520px;
+    position: absolute;
+    /* 轮播图平滑移动 */
+    transition: left 0.2s linear;
+    /* left: -1000px; */
+}
+.banner-ul li{
+    float: left;
+}
+.banner-ul img{
+    width: 100%;
+    height: 520px;
+}
+.banner-right-buttom{
+  float: right;
+  position: absolute;
+  top: 45%;
+  right: 24px;
+  /* background-color: #241f1f; */
+  transition-duration: 0.5s;
+}
+.banner-right-buttom img{
+  width: 46px;
+  height: 46px;
+  /* filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%); */
+  /* position: relative; */
+}
+.banner-right-buttom:hover{
+  transition: 0.2s;
+  right: 18px;
+  cursor: pointer;
+}
+.banner-right-buttom:active{
+  transition: 0.2s;
+  right: 10px;
+  cursor: pointer;
+}
+.banner-promotion{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 12px;
+  padding: 2px 4px;
+  box-sizing: border-box;
+  background-color: rgb(8,47,50);
+  color: rgba(253, 253, 253, 0.575);
+}
+/* 第二部分 加入我们 */
+.promotion{
+  width: 100%;
+  height: 300px;
+  padding: 30px 0;
+  background-color: rgb(247,247,247);
+}
+.photoShow{
+  float: left;
+  width: 28%;
+  margin-left: 30px;
+  position: relative;
+  cursor: pointer;
+}
+.photoShow img{
+  position: relative;
+  border-radius: 5px;
+  top:-5px;
+  width: 100%;
+  height: 200px;
+  transition-duration: 0.4s;
+}
+/* 悬停浮动效果 */
+.photoShow img:hover{
+  top: -10px;
+  box-shadow: 0px 2px 2.5px 1px #aaa;
+}
+
+/* 第三部分 星享俱乐部 */
+.club{
+  /* width: 1200px; */
+  width: 100%;
+  height: 200px;
+  padding: 50px 200px;
+}
+.club-left{
+  float: left;
+  width: 50%;
+  height: 100px;
+}
+.club-left-top{
+  font-size: 22px;
+}
+.club-left-middle{
+  color: gray;
+  margin: 20px 0;
+}
+.club-left-middle a{
+  color: #c2a661;
+}
+.club-left-bottom{
+  float: left;
+  width: 300px;
+  margin-top: 20px;
+}
+.club-left-bottom span{
+  color: #00a360;
+  border: 1px solid #00a360;
+  border-radius: 48px;
+  font-size: 18px;
+  padding: 6px 18px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.club-right{
+  width: 50%;
+  height: 100px;
+  float: left;
+  margin-left: 400px;
+  position: relative;
+  top: -70%;
+  left: 5%;
+}
+.club-right img{
+  width: 80%;
+  height: 72px;
+}
+
+/* 第四部分 星巴克精选 */
+.choice{
+  width: 100%;
+  height: 375px;
+  margin:30px 0px;
+  padding: 15px 200px;
+  background-color: rgb(247,247,247);
+  box-sizing: border-box;
+}
+.choice-top{
+  font-size: 22px;
+  font-weight: bold;
+  width: 50%;
+  /* position: absolute; */
+  margin: 0px 350px;
+}
+.choice-middle{
+  color: gray;
+  width: 300px;
+  margin: 20px 270px;
+}
+.choice-bottom{
+  width: 100%;
+  height: 190px;
+  margin-top: 30px;
+  float: left;
+}
+.choice-bottom-card{
+  width: 22%;
+  height: 180px;
+  margin-left: 20px;
+  background-color: #ffffff;
+  text-align: center;
+  box-shadow:0px 0px 0.1px 0.1px rgba(151, 150, 150, 0.5) ;
+  position: relative;
+  top: 20px;
+  left: 2%;
+  float: left;
+  /* border: 0.1px solid gray; */
+  border-radius: 5px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+.choice-bottom-card img{
+  width: 80%;
+  position: relative;
+  top: -30px;
+}
+.choice-bottom-card:hover{
+  top: 10px;
+  box-shadow: 0px 2px 2.5px 1px #aaa;
+}
+.choice-bottom-card a{
+  color: #c2a66c;
+  font-size: 13px;
+}
+.choice-bottom-card-top{
+  font-weight: bold;
+  margin-top: -20px;
+  margin-bottom: 10px;
+}
+.choice-bottom-card-middle{
+  color: gray;
+  margin-bottom: 10px;
+  font-size: 15px;
+  line-height: 28px;
+}
+
+/* 第五部分 咖啡星讲堂 */
+.culture{
+  width: 100%;
+  height: 20%;
+  padding: 2% 10%;
+  box-sizing: border-box;
+}
+.culture-top{
+  font-weight: bold;
+  font-size: 22px;
+  width: 100%;
+  margin: 0 30%;
+  margin-bottom: 3%;
+}
+.culture-middle{
+  color: gray;
+  font-size: 16px;
+  width: 100%;
+  margin: 0 34%;
+}
+.culture-bottom{
+  width: 100%;
+  height: 30%;
+  margin-left: -10%;
+  position: relative;
+  /* overflow: hidden; */
+  /* float: left; */
+}
+.culture-ul{
+  width: 1600px;
+  position: absolute;
+  /* 平滑移动 */
+  transition: 0.5s linear;
+  /* 向右平滑移动 */
+  /* transition: right 0.5s linear; */
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 0px 130px;
+}
+.culture-bottom-photo{
+  width: 300px;
+  height: 210px;
+  float: left;
+  margin-top: 4%;
+  margin-left: 20px;
+  box-shadow:0.5px 0px 0px 0px rgba(128, 128, 128, 0.438) ;
+  border-bottom: 0.5px solid rgba(128, 128, 128, 0.438);
+  border-right: 0.5px solid rgba(128, 128, 128, 0.438);
+  border-radius: 3px;
+  position: relative;
+  top: 10px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+.culture-bottom-photo:first-child{
+  margin-left: 70px;
+}
+.culture-bottom-photo:hover{
+  top: 0px;
+  /* box-shadow: 0px 2px 2.5px 1px #aaa; */
+}
+.culture-bottom-photo img{
+  width: 100%;
+  height: 160px;
+}
+.culture-bottom-photo-describe{
+  position: absolute;
+  top: 2%;
+  background-color: rgb(194,166,97);
+  color: white;
+  padding: 6px 10px;
+}
+.culture-bottom-photo p{
+  margin-top: 10px;
+  margin-left: 10px;
+  color:rgba(0, 0, 0, 0.575);
+}
+.culture-btn-pre img{
+  position: relative;
+  top: 0px;
+  left: -90px;
+  background-color: #fff;
+  border-radius: 48px;
+  cursor: pointer;
+}
+.culture-btn-next img{
+  position: relative;
+  top: 38px;
+  right: -920px;
+  background-color: #ffffff;
+  border-radius: 78px;
+  cursor: pointer;
+}
+
+/* 备案号 */
+.final-text{
+  width: 100%;
+  height: 1%;
+  text-align: center;
+  margin-left: -3%;
+  margin-top: 2rem;
+}
